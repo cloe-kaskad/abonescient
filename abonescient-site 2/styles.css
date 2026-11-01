@@ -85,7 +85,7 @@ em.one{font-style:italic}
 /* Grille */
 .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:48px}
 .c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c9{grid-column:span 9}.c12{grid-column:span 12}
-.g8-5{grid-column:8 / span 5}.g7-6{grid-column:7 / span 6}.g2-7{grid-column:2 / span 7}.g10-3{grid-column:10 / span 3}
+.g8-5{grid-column:8 / span 5}.g9-4{grid-column:9 / span 4}.g7-6{grid-column:7 / span 6}.g2-7{grid-column:2 / span 7}.g10-3{grid-column:10 / span 3}
 
 /* ---------- Boutons ---------- */
 .btns{display:flex;flex-wrap:wrap;gap:12px}
