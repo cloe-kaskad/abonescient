@@ -3,29 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ateliers IA pour équipes · À bon escient</title>
-<meta name="description" content="Ateliers de 2 h 30 pour voir ce que l'IA déplace dans le travail d'une équipe et décider de ce qu'elle garde. Neuf thèmes, en atelier unique ou en parcours de six semaines, à Paris.">
+<title>Ateliers IA en entreprise : expertise, sens, transmission · À bon escient</title>
+<meta name="description" content="Neuf ateliers de 2 h 30 sur vos dossiers réels pour décider ce que votre équipe confie à l'IA et ce qu'elle garde. À Paris ou dans vos locaux.">
 <link rel="canonical" href="https://abonescient.fr/ateliers">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="À bon escient">
-<meta property="og:title" content="Ateliers IA pour équipes · À bon escient">
-<meta property="og:description" content="Ateliers de 2 h 30 pour voir ce que l'IA déplace dans le travail d'une équipe et décider de ce qu'elle garde. Neuf thèmes, en atelier unique ou en parcours de six semaines, à Paris.">
+<meta property="og:title" content="Ateliers IA en entreprise : expertise, sens, transmission · À bon escient">
+<meta property="og:description" content="Neuf ateliers de 2 h 30 sur vos dossiers réels pour décider ce que votre équipe confie à l'IA et ce qu'elle garde. À Paris ou dans vos locaux.">
 <meta property="og:url" content="https://abonescient.fr/ateliers">
 <meta property="og:image" content="https://abonescient.fr/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ateliers IA pour équipes · À bon escient">
-<meta name="twitter:description" content="Ateliers de 2 h 30 pour voir ce que l'IA déplace dans le travail d'une équipe et décider de ce qu'elle garde. Neuf thèmes, en atelier unique ou en parcours de six semaines, à Paris.">
+<meta name="twitter:title" content="Ateliers IA en entreprise : expertise, sens, transmission · À bon escient">
+<meta name="twitter:description" content="Neuf ateliers de 2 h 30 sur vos dossiers réels pour décider ce que votre équipe confie à l'IA et ce qu'elle garde. À Paris ou dans vos locaux.">
 <meta name="twitter:image" content="https://abonescient.fr/og.jpg">
 <meta name="theme-color" content="#F4F1EA">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/fonts/fraunces-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/photos/atelier-emilien-19.webp" type="image/webp">
 <link rel="stylesheet" href="/styles.css">
 <script>if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&'IntersectionObserver' in window)document.documentElement.classList.add('js');</script>
 <script src="/main.js" defer></script>
-<!-- Google Analytics 4 : décommenter et remplacer G-XXXXXXX par l'ID [à définir]
+<!-- Google Analytics 4 : décommenter et remplacer G-XXXXXXX par l'ID [à fournir]
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
 -->
@@ -35,13 +37,70 @@
  "@graph": [
   {
    "@type": "Service",
-   "name": "Accompagnement à l'intégration de l'IA pour dirigeants et équipes",
+   "name": "Atelier unique",
+   "serviceType": "Atelier IA en entreprise",
+   "description": "Un atelier de 2 h 30, 10 personnes maximum, un thème choisi avec vous, une pratique à emporter et un suivi à J+15.",
    "provider": {
     "@id": "https://abonescient.fr/#org"
    },
-   "areaServed": "FR",
-   "description": "Ateliers d'équipe et coaching individuel de dirigeants pour intégrer l'IA activité par activité, sans perdre expertise, jugement ni sens du travail.",
-   "serviceType": "Accompagnement, ateliers, coaching de dirigeants"
+   "areaServed": "Paris, France",
+   "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "url": "https://abonescient.fr/contact"
+   }
+  },
+  {
+   "@type": "Service",
+   "name": "Parcours de 6 semaines",
+   "serviceType": "Atelier IA en entreprise",
+   "description": "Trois ateliers de 2 h 30 avec la même équipe et son responsable, deux périodes de mise à l'épreuve et des règles communes.",
+   "provider": {
+    "@id": "https://abonescient.fr/#org"
+   },
+   "areaServed": "Paris, France",
+   "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "url": "https://abonescient.fr/contact"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Combien coûte un atelier ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Le tarif dépend du format, atelier unique ou parcours de six semaines. Il vous est communiqué après les 30 minutes de diagnostic offertes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Où ont lieu les ateliers ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Chez vous, ou à Kaskad République, Paris 10e, entre République et Gare de l'Est. Le lieu est inclus dans le tarif."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Combien de personnes ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "De 6 à 10 personnes, avec leur responsable."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Faut-il déjà utiliser l'IA ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Nous partons de vos usages tels qu'ils sont."
+     }
+    }
+   ]
   }
  ]
 }
@@ -54,7 +113,7 @@
 <a class="logo" href="/" aria-label="À bon escient, accueil"><span>À</span> bon escient</a>
 <nav class="menu" aria-label="Navigation principale">
 <a href="/methode">Méthode</a>
-<a class="on" href="/ateliers" aria-current="page">Ateliers</a>
+<a class="on" aria-current="page" href="/ateliers">Ateliers</a>
 <a href="/equipe">Équipe</a>
 <a class="btn" href="/contact">Un premier échange</a>
 </nav>
@@ -69,132 +128,186 @@
 </details>
 </div>
 </header>
-
 <main id="contenu">
-
-<section class="sec" style="padding-top: 120px">
-<div class="w grid">
-<div class="c9 stack" style="gap: 32px">
-<h1 class="h1 rv">Deux heures trente pour voir ce que l'IA déplace. Et décider de ce que vous gardez.</h1>
-<p class="chap rv" style="transition-delay: 80ms">Un atelier ne réorganise pas une équipe en une séance. Il lui donne de quoi voir ce que l'IA lui fait gagner et perdre, et une pratique à mettre à l'épreuve dès le lendemain. Une équipe, un thème, vos dossiers réels.</p>
-<div class="btns rv" style="transition-delay: 160ms">
+<section class="sec" style="padding-top: 88px; padding-bottom: 72px">
+<div class="w grid" style="align-items: center">
+<div class="c6 stack">
+<p class="lab rv">Ateliers en entreprise</p>
+<h1 class="h1 rv">Un thème. Une équipe. Vos dossiers réels.</h1>
+<p class="answer rv read">Un atelier À bon escient dure 2 h 30, réunit jusqu'à 10 personnes avec leur responsable, et porte sur un seul thème travaillé sur les dossiers réels de l'équipe.</p>
+<p class="rv read">Deux heures trente pour voir ce que l'IA fait gagner et perdre à votre équipe, et repartir avec une pratique à tester dès le lendemain. Seul ou en parcours de trois.</p>
+<div class="btns rv" style="margin-top: 8px">
 <a class="btn" href="/contact">Demander un diagnostic</a>
 <a class="btn2" href="#themes">Voir les thèmes</a>
 </div>
-<p class="lab rv" style="transition-delay: 240ms">Tarif [à définir] · Chez vous ou à Kaskad République · 10 personnes max</p>
+<p class="lab rv">2 h 30 · 10 personnes max · Chez vous ou à Kaskad République, Paris 10e</p>
 </div>
+<div class="g8-5 rv"><picture class="ph r45"><source srcset="/photos/atelier-emilien-19.webp" type="image/webp"><img src="/photos/atelier-emilien-19.jpg" alt="Émilien Dereclenne anime un atelier IA en entreprise, Cloé Dana en retrait" width="1020" height="1360" fetchpriority="high" decoding="async" style="object-position: 72% 50%"></picture></div>
 </div>
 </section>
 
-<section class="sec" id="themes" style="padding-top: 0">
+<nav class="toc" aria-label="Sommaire de la page">
 <div class="w">
-<div class="grid" style="margin-bottom: 48px">
-<div class="c5"><h2 class="h2 rv">Un mot, un atelier</h2></div>
-<div class="c7"><p class="rv">Chaque atelier porte sur un seul thème, choisi avec vous ou par sondage auprès de l'équipe. Les thèmes s'enchaînent en parcours de trois ateliers.</p></div>
+<a href="#themes">Les thèmes</a><span class="dot" aria-hidden="true">·</span><a href="#deroule">Le déroulé</a><span class="dot" aria-hidden="true">·</span><a href="#apres">Après l'atelier</a><span class="dot" aria-hidden="true">·</span><a href="#formats">Formats</a><span class="dot" aria-hidden="true">·</span><a href="#questions">Questions</a>
 </div>
-<div>
-<div class="theme rv"><div class="num">01</div><h3 class="h3">L'expertise</h3><p>Je vérifie et valide ce que l'IA produit. Mais saurais-je encore le faire sans elle ? Et suis-je encore l'expert, ou devenu l'assistant de la machine ? Redéfinir ce qui fait votre expertise aujourd'hui, et organiser l'usage de l'IA pour qu'elle la renforce.</p></div>
-<div class="theme rv"><div class="num">02</div><h3 class="h3">L'intuition</h3><p>Mon expérience dit A, l'IA dit B. Comprendre pourquoi la recommandation l'emporte si souvent, et quand l'expérience doit avoir le dernier mot.</p></div>
-<div class="theme rv"><div class="num">03</div><h3 class="h3">La créativité</h3><p>Des idées en abondance, qui finissent toutes par se ressembler. Dans ce que je produis, qu'est-ce qui vient encore de moi ? Utiliser l'IA pour ouvrir des pistes, sans lui céder l'invention et votre singularité.</p></div>
-<div class="theme rv"><div class="num">04</div><h3 class="h3">Le sens</h3><p>Je ne produis plus, je corrige la machine. Retrouver ce qui rend le travail vivant, et le protéger dans l'organisation.</p></div>
-<div class="theme rv"><div class="num">05</div><h3 class="h3">La charge</h3><p>Le temps gagné revient en charge, ou part en corrections. Décider ensemble de ce que devient ce temps.</p></div>
-<div class="theme rv"><div class="num">06</div><h3 class="h3">La place</h3><p>Si la machine fait l'essentiel, pourquoi me garderait-on ? Nommer ce que chacun apporte et que l'IA n'apporte pas, aujourd'hui et dans cinq ans.</p></div>
-<div class="theme rv"><div class="num">07</div><h3 class="h3">La responsabilité</h3><p>L'outil fixe les priorités, mais quand il se trompe, c'est vous qui répondez. Clarifier qui décide, avec quelle marge, et qui signe.</p></div>
-<div class="theme rv"><div class="num">08</div><h3 class="h3">La relève</h3><p>Si l'IA fait le travail des juniors, comment deviendront-ils seniors ? Que devient la transmission ? Réorganiser les tâches pour que les plus jeunes apprennent encore.</p></div>
-<div class="theme rv"><div class="num">09</div><h3 class="h3">Le collectif</h3><p>Si chacun parle à son écran, qui me dira quand je me trompe ? Remettre de l'échange là où l'IA l'a remplacé.</p></div>
-</div>
-</div>
-</section>
+</nav>
 
-<section class="sec" style="padding-top: 0">
+<section class="sec" style="padding-top: 72px; padding-bottom: 0">
 <div class="w">
-<h2 class="h2 rv" style="margin-bottom: 16px">Reconstituer, nommer, décider</h2>
-<p class="chap rv" style="margin-bottom: 56px">Deux heures trente en trois temps, sur un dossier réel de l'équipe.</p>
-<div class="cols3">
-<div class="stack rv" style="gap: 16px"><h3 class="h3">Reconstituer</h3><p>Comment ce dossier a-t-il été traité avec l'IA ? Ce qui a été délégué, ce qui a été vérifié, ce qui s'est perdu en route.</p></div>
-<div class="stack rv" style="gap: 16px; transition-delay: 80ms"><h3 class="h3">Nommer</h3><p>Des apports courts pour comprendre ce qui se joue, comme le biais d'automatisation ou les contre-coûts de l'automatisation. Ce qui se dit en atelier reste dans l'atelier.</p></div>
-<div class="stack rv" style="gap: 16px; transition-delay: 160ms"><h3 class="h3">Décider</h3><p>Ce que l'équipe confie à l'IA, ce qu'elle contrôle, ce qu'elle garde en main. Chacun repart avec une pratique précise.</p></div>
+<div class="stats" data-stagger>
+<div class="stat"><span class="n">2 h 30</span><span class="lab">un atelier</span></div>
+<div class="stat"><span class="n">10</span><span class="lab">personnes max</span></div>
+<div class="stat"><span class="n">3</span><span class="lab">ateliers font un parcours</span></div>
+<div class="stat"><span class="n">J+15</span><span class="lab">un point de suivi</span></div>
 </div>
 </div>
 </section>
 
-<section class="sec" style="padding-top: 0">
-<div class="w grid">
-<div class="c4"><h2 class="h2 rv">Pour que ça tienne après</h2></div>
+<section class="sec" id="themes">
+<div class="w">
+<div class="sec-head">
+<h2 class="h2 rv">Un mot, un atelier.</h2>
+<p class="rv">Le thème est choisi avec vous ou par sondage auprès de l'équipe. Trois thèmes font un parcours. Ouvrez une carte pour lire l'atelier.</p>
+</div>
+
+<div class="fam">
+<div class="fam-head"><h2 class="h2">Le métier</h2><span class="lab">Ateliers 01 à 03</span></div>
+<div class="cards three" data-stagger>
+<details class="theme"><summary><span class="top"><span class="lab">01</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">L'expertise</h3><p class="q">Je vérifie et valide ce que l'IA produit. Mais saurais-je encore le faire sans elle ?</p></summary><div class="more"><p>Et suis-je encore l'expert, ou devenu l'assistant de la machine ? Redéfinir ce qui fait votre expertise aujourd'hui, et organiser l'usage de l'IA pour qu'elle la renforce.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">02</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">L'intuition</h3><p class="q">Mon expérience dit A, l'IA dit B.</p></summary><div class="more"><p>Comprendre pourquoi la recommandation l'emporte si souvent, et quand l'expérience doit avoir le dernier mot.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">03</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">La créativité</h3><p class="q">Dans ce que je produis, qu'est-ce qui vient encore de moi ?</p></summary><div class="more"><p>Des idées en abondance, qui finissent toutes par se ressembler. Utiliser l'IA pour ouvrir des pistes, sans lui céder l'invention et votre singularité.</p></div></details>
+</div>
+</div>
+
+<div class="fam">
+<div class="fam-head"><h2 class="h2">La personne</h2><span class="lab">Ateliers 04 à 06</span></div>
+<div class="cards three" data-stagger>
+<details class="theme"><summary><span class="top"><span class="lab">04</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">Le sens</h3><p class="q">Je ne produis plus, je corrige la machine.</p></summary><div class="more"><p>Retrouver ce qui rend le travail vivant, et le protéger dans l'organisation.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">05</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">La charge</h3><p class="q">Le temps gagné revient en charge, ou part en corrections.</p></summary><div class="more"><p>Décider ensemble de ce que devient ce temps.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">06</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">La place</h3><p class="q">Si la machine fait l'essentiel, pourquoi me garderait-on ?</p></summary><div class="more"><p>Nommer ce que chacun apporte et que l'IA n'apporte pas, aujourd'hui et dans cinq ans.</p></div></details>
+</div>
+</div>
+
+<div class="fam">
+<div class="fam-head"><h2 class="h2">L'organisation</h2><span class="lab">Ateliers 07 à 09</span></div>
+<div class="cards three" data-stagger>
+<details class="theme"><summary><span class="top"><span class="lab">07</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">La responsabilité</h3><p class="q">L'outil fixe les priorités, mais quand il se trompe, c'est vous qui répondez.</p></summary><div class="more"><p>Clarifier qui décide, avec quelle marge, et qui signe.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">08</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">La relève</h3><p class="q">Si l'IA fait le travail des juniors, comment deviendront-ils seniors ?</p></summary><div class="more"><p>Que devient la transmission ? Réorganiser les tâches pour que les plus jeunes apprennent encore.</p></div></details>
+<details class="theme"><summary><span class="top"><span class="lab">09</span><span class="plus" aria-hidden="true">+</span></span><h3 class="h3">Le collectif</h3><p class="q">Si chacun parle à son écran, qui me dira quand je me trompe ?</p></summary><div class="more"><p>Remettre de l'échange là où l'IA l'a remplacé.</p></div></details>
+</div>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="w">
+<p class="lab rv" style="margin-bottom: 24px">Le cadre</p>
+<p class="big rv">Ce qui se dit en atelier reste dans l'atelier.</p>
+</div>
+</section>
+
+<section class="sec" id="deroule">
+<div class="w grid" style="align-items: start">
+<div class="c4 rv"><picture class="ph r34"><source srcset="/photos/atelier-cloe-22.webp" type="image/webp"><img src="/photos/atelier-cloe-22.jpg" alt="Cloé Dana anime un atelier dans une salle de Kaskad République" width="1020" height="1360" loading="lazy" decoding="async" style="object-position: 45% 60%"></picture></div>
 <div class="c8">
-<div class="row t rv" style="grid-template-columns: 260px minmax(0,1fr)"><h3 class="h3">Une pratique à mettre à l'épreuve</h3><p>Une seule, appliquée sur vos dossiers en cours pendant deux semaines.</p></div>
-<div class="row t rv" style="grid-template-columns: 260px minmax(0,1fr); transition-delay: 80ms"><h3 class="h3">Un point de suivi à J+15</h3><p>Chacun partage ce qui a tenu et ce qui a résisté. Cloé répond à chacun.</p></div>
-<div class="row t rv" style="grid-template-columns: 260px minmax(0,1fr); transition-delay: 160ms"><h3 class="h3">Un fil rouge en parcours</h3><p>Sur trois ateliers, les retours à J+15 nourrissent la préparation de l'atelier suivant.</p></div>
+<div class="sec-head" style="padding-left: 8px">
+<p class="lab">Le déroulé</p>
+<h2 class="h2 rv">Reconstituer, nommer, décider.</h2>
+<p class="rv">Deux heures trente en trois temps, sur un dossier réel de l'équipe.</p>
+</div>
+<div class="cards three" data-stagger style="padding-left: 8px">
+<div class="card" style="padding: 28px"><span class="num-s" style="font-size: 40px; line-height: 1">1</span><h3 class="h4">Reconstituer</h3><p>Comment ce dossier a-t-il été traité avec l'IA ? Ce qui a été délégué, vérifié, perdu en route.</p></div>
+<div class="card" style="padding: 28px"><span class="num-s" style="font-size: 40px; line-height: 1">2</span><h3 class="h4">Nommer</h3><p>Des apports courts pour comprendre ce qui se joue, comme le biais d'automatisation.</p></div>
+<div class="card" style="padding: 28px"><span class="num-s" style="font-size: 40px; line-height: 1">3</span><h3 class="h4">Décider</h3><p>Ce que l'équipe confie à l'IA, contrôle, garde en main. Chacun repart avec une pratique précise.</p></div>
+</div>
+<p class="rv read" style="margin-top: 32px; padding-left: 8px">Envie de comprendre ce qu'il y a derrière ? <a class="lnk" href="/methode">Lire la méthode</a>.</p>
 </div>
 </div>
 </section>
 
-<section class="sec" style="padding-top: 0">
+<section class="sec tight" id="apres">
 <div class="w">
-<h2 class="h2 rv" style="margin-bottom: 56px">Un atelier, ou un parcours</h2>
-<div class="vsplit">
-<div class="offer stack rv">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap"><h3 class="h3">Atelier unique</h3><p class="lab">[tarif]</p></div>
-<ul>
-<li>2 h 30, 10 personnes maximum</li>
-<li>Un thème choisi avec vous</li>
-<li>Chez vous ou à Kaskad République</li>
-<li>Une pratique à emporter et un suivi à J+15</li>
-</ul>
-<div><a class="btn2" href="/contact">Organiser un atelier</a></div>
+<div class="sec-head">
+<p class="lab">Après l'atelier</p>
+<h2 class="h2 rv">Pour que ça tienne après.</h2>
 </div>
-<div class="vline"></div>
-<div class="offer stack rv" style="transition-delay: 80ms">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap"><h3 class="h3">Parcours de 6 semaines</h3><div style="display: flex; gap: 20px; align-items: baseline"><span class="reco">Recommandé</span><p class="lab">[tarif]</p></div></div>
-<ul>
-<li>Trois ateliers de 2 h 30, un thème par atelier</li>
-<li>La même équipe, avec son responsable</li>
-<li>Deux périodes de mise à l'épreuve sur vos dossiers en cours</li>
-<li>Des règles communes que l'équipe garde</li>
-</ul>
-<div><a class="btn" href="/contact">Organiser un parcours</a></div>
+<div class="frise" style="--n: 3" data-stagger>
+<div class="pt"><span class="num">J</span><h3 class="h4">Une pratique à tester</h3><p>Une seule, appliquée sur vos dossiers en cours pendant deux semaines.</p></div>
+<div class="pt"><span class="num">J+15</span><h3 class="h4">Un point de suivi</h3><p>Chacun partage ce qui a tenu et ce qui a résisté. Cloé répond à chacun.</p></div>
+<div class="pt"><span class="num">×3</span><h3 class="h4">Un fil rouge en parcours</h3><p>Sur trois ateliers, les retours à J+15 nourrissent la préparation de l'atelier suivant.</p></div>
 </div>
+<blockquote class="pull rv"><p>Chacun repart avec une pratique précise.</p></blockquote>
+</div>
+</section>
+
+<section class="sec" id="formats">
+<div class="w">
+<div class="sec-head"><h2 class="h2 rv">Un atelier, ou un parcours.</h2></div>
+<div class="cards two" data-stagger>
+<article class="card">
+<p class="lab">Format court</p>
+<h3 class="h3">Atelier unique</h3>
+<p class="price">[tarif]</p>
+<ul class="ticks"><li>2 h 30, 10 personnes maximum</li><li>Un thème choisi avec vous</li><li>Chez vous ou à Kaskad République</li><li>Une pratique à emporter et un suivi à J+15</li></ul>
+<div style="margin-top: auto; padding-top: 8px"><a class="btn2" href="/contact">Organiser un atelier</a></div>
+</article>
+<article class="card alt">
+<span class="reco">Recommandé</span>
+<h3 class="h3">Parcours de 6 semaines</h3>
+<p class="price">[tarif]</p>
+<ul class="ticks"><li>Trois ateliers de 2 h 30, un thème par atelier</li><li>La même équipe, avec son responsable</li><li>Deux périodes de mise à l'épreuve sur vos dossiers</li><li>Des règles communes que l'équipe garde</li></ul>
+<div style="margin-top: auto; padding-top: 8px"><a class="btn" href="/contact">Organiser un parcours</a></div>
+</article>
 </div>
 </div>
 </section>
 
-<section class="sec" style="padding-top: 0">
+<section class="sec tight" id="lieu">
 <div class="w grid" style="align-items: center">
 <div class="c5 stack">
-<h2 class="h2 rv">Chez vous, ou dans un lieu fait pour ça</h2>
-<p class="rv">Kaskad République, Paris 10e, le lieu cofondé par Cloé, entre République et Gare de l'Est. Inclus dans le tarif.</p>
+<p class="lab">Le lieu</p>
+<h2 class="h2 rv">Chez vous, ou dans un lieu fait pour ça.</h2>
+<p class="rv read">Kaskad République, Paris 10e, le lieu cofondé par Cloé, entre République et Gare de l'Est. Inclus dans le tarif.</p>
 </div>
-<div class="c7"><img class="ph rv" src="/photos/atelier-cloe-22.jpg" alt="Cloé Dana anime un atelier dans une salle de Kaskad République" width="1020" height="1360" loading="lazy" style="display: block; object-fit: cover; height: auto; aspect-ratio: 1 / 1; object-position: 50% 62%"></div>
+<div class="c7"><div class="ph r32 ph-empty rv" role="img" aria-label="Kaskad République, Paris 10e (photo à venir)"></div></div>
 </div>
 </section>
 
-<section class="sec cta">
+<section class="sec" id="questions">
 <div class="w grid">
-<div class="c8 stack">
-<h2 class="h2 rv">Un atelier pour votre équipe, votre comité de direction, votre réseau ?</h2>
-<p class="rv">30 minutes de diagnostic offertes : votre contexte, vos usages de l'IA, ce que vous en attendez. Puis une proposition de thème et de date.</p>
-<div class="btns rv">
-<a class="btn" href="[URL de prise de rendez-vous, Google Calendar]">Réserver mon diagnostic</a>
-<a class="btn2" href="mailto:emilien@abonescient.fr?subject=Pr%C3%A9sentation%20%C3%80%20bon%20escient">Recevoir la présentation</a>
-</div>
-<p class="lab">Réponse sous 48 h · Présentiel à Paris · Cadre confidentiel</p>
+<div class="c4"><h2 class="h2 rv" style="font-size: clamp(1.8rem, 3vw, 2.4rem)">Questions fréquentes</h2></div>
+<div class="c8">
+<details class="faq"><summary>Combien coûte un atelier ?<span class="sign" aria-hidden="true">+</span></summary><p>Le tarif dépend du format, atelier unique ou parcours de six semaines. Il vous est communiqué après les 30 minutes de diagnostic offertes. [tarif à définir]</p></details>
+<details class="faq"><summary>Où ont lieu les ateliers ?<span class="sign" aria-hidden="true">+</span></summary><p>Chez vous, ou à Kaskad République, Paris 10e, entre République et Gare de l'Est. Le lieu est inclus dans le tarif.</p></details>
+<details class="faq"><summary>Combien de personnes ?<span class="sign" aria-hidden="true">+</span></summary><p>De 6 à 10 personnes, avec leur responsable.</p></details>
+<details class="faq"><summary>Faut-il déjà utiliser l'IA ?<span class="sign" aria-hidden="true">+</span></summary><p>Non. Nous partons de vos usages tels qu'ils sont.</p></details>
 </div>
 </div>
 </section>
-
+<section class="section-echange" id="echange">
+<div class="inner">
+<p class="lab">Un premier échange</p>
+<h2 class="h2">Un atelier pour votre équipe, votre comité de direction, votre réseau ?</h2>
+<p>30 minutes de diagnostic offertes : votre contexte, vos usages de l'IA, ce que vous en attendez. Puis une proposition de thème et de date.</p>
+<div class="actions">
+<a class="btn btn-primary" href="[URL de prise de rendez-vous, Google Calendar]">Réserver mon diagnostic</a>
+<a class="btn2 btn-secondary" href="mailto:emilien@abonescient.fr?subject=Pr%C3%A9sentation%20%C3%80%20bon%20escient">Recevoir la présentation</a>
+</div>
+<p class="meta">Réponse sous 48 h · Présentiel à Paris · Cadre confidentiel</p>
+</div>
+</section>
 </main>
-
 <footer class="foot">
 <div class="w grid">
 <div class="c5 stack" style="gap: 8px">
-<p class="logo" style="font-size: 28px" aria-hidden="false"><span>À</span> bon escient</p>
+<p class="logo" style="font-size: 30px"><span>À</span> bon escient</p>
 <p class="small">Intégrer l'IA, sans perdre la main.</p>
 </div>
 <div class="c7 stack" style="gap: 16px">
-<p><a href="mailto:emilien@abonescient.fr">emilien@abonescient.fr</a></p>
-<p class="small">Kaskad République, Paris 10e</p>
-<nav class="flinks" aria-label="Pied de page"><a href="/methode">Méthode</a><a href="/ateliers">Ateliers</a><a href="/equipe">Équipe</a><a href="/mentions-legales">Mentions légales</a></nav>
-<p class="lab" style="margin-top: 16px">Par les créateurs de <a href="https://amarecherche.fr" style="color: #656A74">Blocages &amp; Intuition</a></p>
+<p style="margin: 0"><a href="mailto:emilien@abonescient.fr">emilien@abonescient.fr</a></p>
+<p class="small" style="margin: 0">Kaskad République, Paris 10e</p>
+<nav class="flinks" aria-label="Pied de page"><a href="/methode">Méthode</a><a href="/ateliers">Ateliers</a><a href="/equipe">Équipe</a><a href="/contact">Contact</a><a href="/mentions-legales">Mentions légales</a></nav>
+<p class="lab" style="margin-top: 16px">Par les créateurs de <a href="https://amarecherche.fr" style="color: inherit">Blocages &amp; Intuition</a></p>
 </div>
 </div>
 </footer>

@@ -21,5 +21,5 @@ Site statique (HTML, CSS, JS, sans build). Hébergement prévu : Netlify, via Gi
 
 - `index.html`, `methode.html`, `ateliers.html`, `equipe.html`, `contact.html`, `mentions-legales.html`
 - `styles.css` (charte, variables), `main.js` (apparitions au scroll, respecte `prefers-reduced-motion`)
-- `photos/` (JPG optimisés), `fonts/` (Fraunces et DM Sans auto-hébergées, pas d'appel à Google)
+- `photos/` (JPG optimisés), `fonts/` (Newsreader et DM Sans auto-hébergées, pas d'appel à Google)
 - `og.jpg` (partage réseaux), `favicon.svg`, `sitemap.xml`, `robots.txt`, `llms.txt`, `netlify.toml`
