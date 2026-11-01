@@ -23,7 +23,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="/photos/duo-verriere.webp" type="image/webp">
+<link rel="preload" as="image" href="/photos/kaskad-republique.webp" type="image/webp">
 <link rel="stylesheet" href="/styles.css">
 <script>if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&'IntersectionObserver' in window)document.documentElement.classList.add('js');</script>
 <script src="/main.js" defer></script>
@@ -108,7 +108,7 @@
 </div>
 </nav>
 
-<div class="rv"><picture class="ph full wide10"><source srcset="/photos/duo-verriere.webp" type="image/webp"><img src="/photos/duo-verriere.jpg" alt="Cloé Dana et Émilien Dereclenne devant un mur de briques de verre" width="1500" height="2000" fetchpriority="high" decoding="async" style="object-position: 50% 34%"></picture></div>
+<div class="rv"><picture class="ph full wide"><source srcset="/photos/kaskad-republique.webp" type="image/webp"><img src="/photos/kaskad-republique.jpg" alt="Le salon de Kaskad République, Paris 10e, avec une grande toile bleue sous la verrière" width="1500" height="2000" fetchpriority="high" decoding="async" style="object-position: 50% 48%"></picture></div>
 
 <section class="sec" id="experiences">
 <div class="w">
@@ -165,15 +165,29 @@
 
 <section class="band" id="boussole">
 <div class="w">
-<p class="lab rv" style="margin-bottom: 28px">La boussole</p>
-<p class="quote rv">Le philosophe Gilbert Simondon décrivait l'humain, face aux machines, comme le chef d'orchestre qui les comprend et les coordonne, ni leur maître ni leur esclave.</p>
-<p class="rv read" style="margin-top: 28px">C'est notre boussole : être le chef d'orchestre de l'IA, pas l'assistant de son assistant. Quatre questions, pour chaque tâche :</p>
-<ul class="qs" data-stagger>
-<li>Dans cette tâche, est-ce que je dirige l'outil, ou est-ce l'outil qui m'aliène ?</li>
+<div class="grid" style="align-items: center; row-gap: 40px">
+<div class="c5">
+<p class="lab rv" style="margin-bottom: 20px">La boussole</p>
+<p class="quote rv">Être le chef d'orchestre de l'IA, pas l'assistant de son assistant.</p>
+<p class="rv small" style="margin-top: 20px; color: var(--paper); opacity: .85">D'après Gilbert Simondon : face aux machines, ni maître ni esclave, mais chef d'orchestre.</p>
+</div>
+<div class="g7-6 rv">
+<div class="qrot" aria-roledescription="carrousel" aria-label="Quatre questions pour chaque tâche">
+<p class="lab" style="margin-bottom: 16px">Quatre questions, pour chaque tâche</p>
+<ol class="qrot-list">
+<li class="on">Dans cette tâche, est-ce que je dirige l'outil, ou est-ce l'outil qui m'aliène ?</li>
 <li>Qu'est-ce que je comprends mieux grâce à lui ?</li>
 <li>Qu'est-ce que je ne sais plus faire sans lui ?</li>
 <li>Qui a le dernier mot ?</li>
-</ul>
+</ol>
+<div class="qrot-ctrl">
+<span class="qrot-count" aria-live="polite">1 / 4</span>
+<span class="qrot-dots"><button type="button" aria-label="Question 1" class="on"></button><button type="button" aria-label="Question 2"></button><button type="button" aria-label="Question 3"></button><button type="button" aria-label="Question 4"></button></span>
+<button type="button" class="qrot-pause" aria-label="Mettre en pause">Pause</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 

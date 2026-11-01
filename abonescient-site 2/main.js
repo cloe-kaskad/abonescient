@@ -23,6 +23,35 @@
     Object.keys(map).forEach(function (id) { var el = document.getElementById(id); if (el) spy.observe(el); });
   }
 
+
+  // Boussole : une question à la fois, défilement automatique (pause au survol, au focus ou au clic)
+  document.querySelectorAll('.qrot').forEach(function (box) {
+    var items = box.querySelectorAll('.qrot-list li');
+    var dots = box.querySelectorAll('.qrot-dots button');
+    var count = box.querySelector('.qrot-count');
+    var pauseBtn = box.querySelector('.qrot-pause');
+    var i = 0, timer = null, paused = false, hover = false;
+    function show(n) {
+      i = (n + items.length) % items.length;
+      items.forEach(function (li, k) { li.classList.toggle('on', k === i); li.setAttribute('aria-hidden', k === i ? 'false' : 'true'); });
+      dots.forEach(function (d, k) { d.classList.toggle('on', k === i); });
+      if (count) count.textContent = (i + 1) + ' / ' + items.length;
+    }
+    function start() { stop(); if (!paused && !hover) timer = setInterval(function () { show(i + 1); }, 4500); }
+    function stop() { if (timer) clearInterval(timer); timer = null; }
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); start(); }); });
+    if (pauseBtn) pauseBtn.addEventListener('click', function () {
+      paused = !paused; pauseBtn.textContent = paused ? 'Lecture' : 'Pause';
+      pauseBtn.setAttribute('aria-label', paused ? 'Reprendre le défilement' : 'Mettre en pause'); paused ? stop() : start();
+    });
+    box.addEventListener('mouseenter', function () { hover = true; stop(); });
+    box.addEventListener('mouseleave', function () { hover = false; start(); });
+    box.addEventListener('focusin', function () { hover = true; stop(); });
+    box.addEventListener('focusout', function () { hover = false; start(); });
+    show(0);
+    if (!reduce) start();
+  });
+
   if (reduce || !('IntersectionObserver' in window)) return;
   document.documentElement.classList.add('js');
 
