@@ -1,0 +1,20 @@
+# À bon escient · configuration Netlify
+[build]
+  publish = "."
+
+# URLs propres : /methode sert methode.html (Pretty URLs activées par défaut sur Netlify)
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/photos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
