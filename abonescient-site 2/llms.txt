@@ -4,6 +4,7 @@
 ## Pages
 - [Méthode](https://abonescient.fr/methode) : quatre étapes, mesurer, trier, mettre à l'épreuve, ancrer
 - [Ateliers](https://abonescient.fr/ateliers) : neuf thèmes de 2 h 30 sur les dossiers réels d'une équipe
+- [Coaching](https://abonescient.fr/coaching) : coaching individuel de dirigeants, 6 séances de 1 h 30 sur 3 mois
 - [Équipe](https://abonescient.fr/equipe) : un philosophe, une entrepreneure
 - [Contact](https://abonescient.fr/contact) : premier échange de 30 minutes offert
 

@@ -191,7 +191,7 @@ em.one{font-style:italic}
 .fam-head{border-top:1px solid var(--stone);padding-top:24px;margin-bottom:28px;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
 .fam-head .h2{font-size:28px;line-height:1.15}
 .theme{background:var(--card);border:1px solid var(--stone);border-radius:2px}
-.theme summary{list-style:none;cursor:pointer;padding:32px 32px 28px;display:flex;flex-direction:column;gap:12px;height:100%}
+.theme summary{list-style:none;cursor:pointer;padding:32px 32px 28px;display:flex;flex-direction:column;gap:12px}
 .theme summary::-webkit-details-marker{display:none}
 .theme .top{display:flex;justify-content:space-between;align-items:center}
 .theme .plus{font-size:26px;line-height:1;color:var(--ochre);transition:transform .3s ease;font-weight:400}
@@ -322,3 +322,19 @@ em.one{font-style:italic}
   .qrot-ctrl{display:none}
 }
 @media (max-width:860px){.qrot{padding-left:20px}.qrot-list{min-height:8.5em}}
+
+/* Questions dépliées des ateliers */
+.theme .qlist{list-style:none;margin:0;padding:16px 0 0;border-top:1px solid rgba(138,143,153,.5);display:grid;gap:12px}
+.theme .qlist li{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.4;color:var(--ink);padding-left:18px;position:relative}
+.theme .qlist li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--ochre)}
+
+/* Coaching */
+.q-it{font-family:var(--serif);font-style:italic;font-size:19px!important;line-height:1.4;color:var(--stone-text)}
+.ticks-plain{list-style:none;margin:0;padding:0;border-top:1px solid var(--stone)}
+.ticks-plain li{padding:14px 0 14px 22px;border-bottom:1px solid var(--stone);position:relative;max-width:var(--read)}
+.ticks-plain li::before{content:"";position:absolute;left:0;top:1.45em;width:10px;height:1px;background:var(--ochre)}
+.frise-band::before{background:rgba(244,241,234,.45)}
+.frise-band .pt::before{background:var(--ultramarine);border-color:var(--paper)}
+.frise-band .pt .num{color:var(--ochre)}
+.frise-band .pt .h4{color:var(--paper)}
+.frise-band .pt p{color:var(--paper);opacity:.9}
